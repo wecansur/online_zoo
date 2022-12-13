@@ -1,0 +1,25 @@
+{
+  "name": "online_zoo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wecansur/online_zoo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wecansur/online_zoo/issues"
+  },
+  "homepage": "https://github.com/wecansur/online_zoo#readme",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
