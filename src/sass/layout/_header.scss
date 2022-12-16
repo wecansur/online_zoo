@@ -1,4 +1,47 @@
 .header {
     background-color: #000000;
-    backdrop-filter: blur(2px);;
+    backdrop-filter: blur(2px);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+    .logo-n-nav {
+        display: flex;
+        align-items: center;
+        width: 620px;
+        height: 100%;
+
+        .nav {
+            width: 475px;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 60px;
+    
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+    
+            list-style: none;
+        }
+    
+        .nav-item {
+            &:hover {
+                color: $orange;
+                cursor: pointer;
+                transition: .3s;
+            }
+        }
+    
+        
+    }
+
+    
 }
