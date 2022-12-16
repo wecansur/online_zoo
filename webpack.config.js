@@ -46,8 +46,12 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: './src/index.html',
-            filename: './index.html'
+            template: './src/pages/main/index.html',
+            filename: 'index.html'
+        }),
+        new HtmlWebPackPlugin({
+            template: './src/pages/donate/donate-page.html',
+            filename: 'donate-page.html'
         })
     ]
 };
