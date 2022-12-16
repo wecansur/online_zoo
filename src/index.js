@@ -1,2 +1,2 @@
-import './index.scss';
+import './sass/index.scss';
 console.log(1)
