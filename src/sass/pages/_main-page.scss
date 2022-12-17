@@ -1,0 +1,46 @@
+.watch-animal {
+    .container {
+        position: relative;
+        height: 780px;
+
+        background-image: url("/src/assets/images/giant-panda.jpg");
+    }
+    .circle-button {
+        position: absolute;
+        top: 546px;
+        left: 983px;
+    }
+}
+
+.ellipse {
+    position: absolute;
+    left: 807px;
+    top: 12px;
+    width: 465px;
+    height: 465px;
+
+    border-radius: 50%;
+    background: linear-gradient(113.96deg, $orange 1.49%, #FE9013 101.44%);
+}
+
+.watch-title {
+    position: absolute;
+    top: 86px;
+    left: 880px;
+    z-index: 3;
+    width: 500px;
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    span {
+        color: $yellow;
+    }
+}
