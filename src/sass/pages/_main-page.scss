@@ -99,3 +99,52 @@
     font-size: 16px;
     line-height: 22px;
 }
+
+//pets
+
+.arrow {
+    padding: 27px 23px;
+
+    background: linear-gradient(113.96deg, $orange 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+}
+
+.pets-item {
+    width: 366px;
+    height: 426px;
+    
+    border: 1px solid $orange;
+    border-radius: 5px;
+
+}
+
+.pet-img {
+    width: 100%;
+}
+
+.pets-content {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 10px 0 16px;
+}
+
+.pets-title {
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    text-transform: uppercase;
+}
+
+.pets-location {
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+}
