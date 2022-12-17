@@ -1,3 +1,5 @@
+//watch section
+
 .watch-animal {
     .container {
         position: relative;
@@ -43,4 +45,57 @@
     span {
         color: $yellow;
     }
+}
+
+//backstage section
+
+.backstage {
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        height: 723px;
+        padding-top: 140px;
+        padding-bottom: 180px;
+
+        font-style: normal;
+        font-weight: 400;
+
+        color: $black-blue;
+
+        background-image: url(/src/assets/images/backstage-flower.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+}
+
+.backstage-content {
+    max-width: 465px;
+}
+
+.backstage-title {
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.backstage-text1 {
+    margin: 0 0 54px 0;
+
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.backstage-subtitle {
+    margin: 0 0 34px 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.backstage-text2 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
 }
