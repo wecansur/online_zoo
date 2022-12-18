@@ -200,6 +200,7 @@
 
 .pets-tooltip {
     position: absolute;
+    z-index: -1;
     top: 250px;
     left: 10px;
 
@@ -215,6 +216,12 @@
     border-radius: 5px;
 
     background-color: #FFFFFF;
+}
+
+.pets-tooltip-active {
+    z-index: 2;
+    top: 375px;
+    transition: .5s;
 }
 
 .tooltip-animal {

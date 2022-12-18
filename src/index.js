@@ -1,2 +1,5 @@
 import './sass/index.scss';
-console.log(1)
+
+import petImges from './scripts/consts';
+import sum from './scripts/functions';
+
