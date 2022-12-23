@@ -353,3 +353,83 @@
 .monkey {
     padding: 48px 21.25px 48.4px 22px;
 }
+
+// testimonials
+
+.testimonials {
+    padding-top: 140px;
+    .container {
+
+    }
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.testimonials-title {
+    margin: 0 0 47px 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+
+    color: $black-blue;
+}
+
+.testimonials-item {
+    width: 268px;
+    padding: 15px 15px 19px 16px;
+
+    background: $light-gray;
+    border: 1px solid $orange;
+    border-radius: 20px;
+}
+
+.client-data {
+    display: flex;
+}
+
+.avatar {
+    width: 37px;
+    height: 37px;
+}
+
+.client-description {
+    margin-left: 5px;
+}
+
+.client-name {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+
+    color: #000000;
+}
+
+.client-info {
+    margin: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    
+    color: #BDBDBD;
+}
+
+.testimonial {
+    margin: 10px 0 0 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #767474;
+}
+
