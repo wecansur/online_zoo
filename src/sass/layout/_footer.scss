@@ -1,0 +1,73 @@
+.footer {
+    padding: 40px 0 50px 0;
+    background: #111115;
+
+    .container {
+        display: flex;
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-center {
+            display: flex;
+            align-items: flex-end;
+
+            width: 31.2%;
+            margin-left: 101px;
+        }
+    }
+
+}
+
+.donate-button {
+    margin: 68px 0 44px 0;
+}
+
+.social-media-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 0;
+    
+}
+
+.social-media-item {
+    position: relative;
+    z-index: 2;
+}
+
+.s-m-text {
+    padding-left: 20px;
+}
+
+.s-m-ellipse {
+    position: absolute;
+    left: -5.5px;
+    top: -5.5px;
+    z-index: 1;
+
+    width: 26px;
+    height: 26px;
+
+    background-color: rgba(196, 196, 196, 0.5);
+    border-radius: 50%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    list-style: none;
+
+    color: #FFFFFF;
+}
+
+.nav-item {
+    &:hover {
+        color: $orange;
+        cursor: pointer;
+        transition: .3s;
+    }
+}
