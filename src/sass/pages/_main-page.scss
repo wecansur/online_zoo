@@ -358,9 +358,16 @@
 
 .testimonials {
     padding-top: 140px;
-    .container {
+    padding-bottom: 180px;
 
-    }
+    background-image: url('/src/assets/images/leav_foto_cut.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    } 
 }
 
 .testimonials-container {
@@ -433,3 +440,6 @@
     color: #767474;
 }
 
+.scroller {
+    margin: 22px 0 32px 0;
+}
