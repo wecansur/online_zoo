@@ -15,6 +15,11 @@
 
             width: 31.2%;
             margin-left: 101px;
+            margin-right: 32px;
+        }
+
+        .footer-right {
+            width: 31.6%;
         }
     }
 
@@ -34,11 +39,43 @@
 
 .social-media-item {
     position: relative;
-    z-index: 2;
 }
 
-.s-m-text {
-    padding-left: 20px;
+.social-media-link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.social-media-img {
+    position: relative;
+    z-index: 2;
+
+    padding-right: 5px;
+}
+
+.fb-img {
+    padding-left: 4px;
+}
+
+.fb-text {
+    padding-left: 15px;
+}
+
+.twttr-text {
+    padding-left: 11px;
+}
+
+.inst-text {
+    padding-left: 11px;
+}
+
+.yt-text {
+    padding-left: 9px;
+}
+
+.s-m-text-hover {
+    color: $green;
+    transition: .3s;
 }
 
 .s-m-ellipse {
@@ -52,6 +89,13 @@
 
     background-color: rgba(196, 196, 196, 0.5);
     border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.s-m-ellipse-hover {
+    background-color: $green;
+    transition: .3s;
 }
 
 .nav-list {
@@ -70,4 +114,74 @@
         cursor: pointer;
         transition: .3s;
     }
+}
+
+.subscribe-title {
+    margin: 0 0 14px 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #FFFFFF;
+}
+
+.input {
+    width: 62%;
+    height: 42px;
+    padding-left: 10px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    background-color: transparent;
+    border: 1px solid $orange;
+}
+
+.subscribe-button {
+    height: 42px;
+    width: 35%;
+    margin-left: 5px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #000000;
+    background: #F1F3F2;
+    border: 1px solid $black-blue;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    &:hover {
+        color: $green;
+        border-color: $green;
+        transition: .3s;
+    }
+}
+
+.designer-information {
+    position: relative;
+    top: 228px;
+    left: 130px;
+
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 21px;
+    
+    color: lightgray;
+}
+
+.footer-designer {
+    margin: 0;
+}
+
+.rss-info {
+    margin: 10px 0 0 0;
 }
