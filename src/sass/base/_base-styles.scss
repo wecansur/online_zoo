@@ -8,4 +8,11 @@ body {
 
 .container {
     @include desktop-container;
+    @media (max-width: 1365px) {
+        padding: 0 100px;
+    }
+
+    @media (max-width: 1207px) {
+        @include small-desktop-container;        
+    }
 }

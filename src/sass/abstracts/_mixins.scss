@@ -8,3 +8,7 @@
     margin: auto;
     padding: 0 220px;
 }
+
+@mixin small-desktop-container {
+    padding: 0 30px;
+}

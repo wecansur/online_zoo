@@ -6,29 +6,39 @@
         height: 780px;
 
         background-image: url("/src/assets/images/giant-panda.jpg");
+
+        @media (max-width: 1207px) {
+            height: 584px;
+        }
     }
     .circle-button {
         position: absolute;
-        top: 546px;
-        left: 983px;
+        top: 80%;
+        left: 61%;
     }
 }
 
 .ellipse {
     position: absolute;
-    left: 807px;
-    top: 12px;
+    left: 50.2%;
+    top: 2%;
     width: 465px;
     height: 465px;
 
     border-radius: 50%;
     background: linear-gradient(113.96deg, $orange 1.49%, #FE9013 101.44%);
+
+    @media (max-width: 1207px) {
+        width: 367px;
+        height: 367px;
+    }
+
 }
 
 .watch-title {
     position: absolute;
-    top: 86px;
-    left: 880px;
+    top: 11%;
+    left: 53%;
     z-index: 3;
     width: 500px;
     margin: 0;
@@ -42,6 +52,15 @@
 
     color: #FFFFFF;
 
+    @media (max-width: 1207px) {
+        top: 9%;
+        left: 53%;
+        width: 400px;
+
+        font-size: 85px;
+        line-height: 65px;
+    }
+
     span {
         color: $yellow;
     }
@@ -50,6 +69,15 @@
 //backstage section
 
 .backstage {
+
+    background-image: url(/src/assets/images/backstage-flower.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1365px) {
+        background-image: none;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -63,16 +91,48 @@
 
         color: $black-blue;
 
-        
+        @media (max-width: 1207px) {
+            height: 669px;
+            padding-top: 109px;
+            padding-bottom: 152px;
+        }
     }
-    
-    background-image: url(/src/assets/images/backstage-flower.png);
-    background-position: top right;
-    background-repeat: no-repeat;
+}
+
+.old-man-container {
+    width: 52.5%;
+
+    @media (max-width: 1207px) {
+        width: 48.5%;
+    }
+}
+
+.old-man {
+    width: 100%;
+    height: auto;
+
+    @media (max-width: 1207px) {
+        display: none;
+    }
+}
+
+.old-man-small-desktop {
+    display: none;
+
+    @media (max-width: 1207px) {
+        display: block;
+
+        width: 100%;
+        height: auto;
+    }
 }
 
 .backstage-content {
-    max-width: 465px;
+    width: 40.1%;
+
+    @media (max-width: 1207px) {
+        width: 48.4%;
+    }
 }
 
 .backstage-title {
@@ -87,6 +147,10 @@
 
     font-size: 16px;
     line-height: 21px;
+
+    @media (max-width: 1207px) {
+        margin-bottom: 44px;
+    }
 }
 
 .backstage-subtitle {
@@ -94,6 +158,10 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
+    
+    @media (max-width: 1207px) {
+        margin-bottom: 30px;
+    }
 }
 
 .backstage-text2 {
@@ -112,9 +180,8 @@
         align-items: center;
         height: 1106px;
         padding: 0 140px 100px 140px;
-
-        
     }
+
     background-image: url('/src/assets/images/palm.png'), url('/src/assets/images/strelitzia.png');
     background-position: left bottom, right bottom;
     background-repeat: no-repeat, no-repeat;
@@ -145,13 +212,13 @@
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
     column-gap: 30px;
     row-gap: 20px;
-    max-width: 1158px;
+    width: 87.5%;
     height: 872px;
 }
 
 .pets-item {
     position: relative;
-    width: 366px;
+    width: 100%;
     height: 426px;
     
     border: 1px solid $orange;
@@ -199,6 +266,7 @@
 }
 
 .pets-tooltip {
+    display: none;
     position: absolute;
     z-index: -1;
     top: 250px;
@@ -331,7 +399,7 @@
 }
 
 .feed-item {
-    width: 168px;
+    width: 22%;
 }
 
 .pick-arrow {
@@ -339,6 +407,8 @@
 }
 
 .feed-img {    
+    width: 100%;
+    height: auto;
     background-color: #FFFFFF;
     border: 1px solid $orange;
     border-radius: 5px;
