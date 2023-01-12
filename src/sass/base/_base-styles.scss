@@ -8,7 +8,7 @@ body {
 
 .container {
     @include desktop-container;
-    @media (max-width: 1365px) {
+    @media (max-width: 1530px) {
         padding: 0 100px;
     }
 
