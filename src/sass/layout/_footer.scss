@@ -192,6 +192,10 @@
     
     
     color: lightgray;
+
+    @media (max-width: 950px) {
+        left: 100px;
+    }
 }
 
 .footer-designer {
