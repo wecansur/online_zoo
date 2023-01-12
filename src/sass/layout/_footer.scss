@@ -16,10 +16,18 @@
             width: 31.2%;
             margin-left: 101px;
             margin-right: 32px;
+
+            @media (max-width: 1300px) {
+                margin: 0;
+            }
         }
 
         .footer-right {
             width: 31.6%;
+
+            @media (max-width: 1300px) {
+                width: 49%;
+            }
         }
     }
 
@@ -106,6 +114,10 @@
     list-style: none;
 
     color: #FFFFFF;
+
+    @media (max-width: 1300px) {
+        padding: 0;
+    }
 }
 
 .nav-item {
@@ -171,10 +183,13 @@
     top: 228px;
     left: 130px;
 
+    width: 240px;
+
     font-style: normal;
     font-weight: lighter;
     font-size: 16px;
     line-height: 21px;
+    
     
     color: lightgray;
 }
