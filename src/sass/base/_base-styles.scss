@@ -15,4 +15,8 @@ body {
     @media (max-width: 1207px) {
         @include small-desktop-container;        
     }
+
+    @media (max-width: 785px) {
+        @include tablet-container;        
+    }
 }

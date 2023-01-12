@@ -7,6 +7,22 @@
         justify-content: space-between;
         align-items: center;
         height: 80px;
+
+        .designed-link {
+            width: 106px;
+
+            @media (max-width: 640px) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 785px) {
+            height: 60px;
+        }
+
+        @media (max-width: 640px) {
+            height: 34px;
+        }
     }
     .logo-n-nav {
         display: flex;
@@ -16,6 +32,10 @@
 
         .nav {
             width: 475px;
+
+            @media (max-width: 640px) {
+                display: none;
+            }
         }
 
         .nav-list {
@@ -30,6 +50,10 @@
             color: #FFFFFF;
     
             list-style: none;
+
+            @media (max-width: 785px) {
+                padding-left: 40px;
+            }
         }
     
         .nav-item {
@@ -38,10 +62,35 @@
                 cursor: pointer;
                 transition: .3s;
             }
+        } 
+
+        @media (max-width: 785px) {
+            width: 450px;
         }
-    
         
     }
 
     
+}
+
+.logo {
+    @media (max-width: 640px) {
+        display: none;
+    } 
+}
+
+.logo-tablet {
+    display: none;
+
+    @media (max-width: 640px) {
+        display: inline;
+    } 
+}
+
+.burger-button {
+    display: none;
+
+    @media (max-width: 640px) {
+        display: inline;
+    } 
 }
