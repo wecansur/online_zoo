@@ -132,6 +132,10 @@
         background-image: none;
     }
 
+    @media (max-width: 800px) {
+        background-image: url(/src/assets/images/backstage-flower_tablet.png);
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -150,6 +154,12 @@
             padding-top: 109px;
             padding-bottom: 152px;
         }
+
+        @media (max-width: 800px) {
+            height: 510px;
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
     }
 }
 
@@ -158,6 +168,10 @@
 
     @media (max-width: 1207px) {
         width: 48.5%;
+    }
+
+    @media (max-width: 800px) {
+        display: none;
     }
 }
 
@@ -187,6 +201,10 @@
     @media (max-width: 1207px) {
         width: 48.4%;
     }
+
+    @media (max-width: 800px) {
+        width: 82.6%;
+    }
 }
 
 .backstage-title {
@@ -204,6 +222,11 @@
 
     @media (max-width: 1207px) {
         margin-bottom: 44px;
+    }
+
+    @media (max-width: 800px) {
+        width: 92%;
+        margin-bottom: 30px;
     }
 }
 
