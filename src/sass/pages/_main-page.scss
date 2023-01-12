@@ -501,6 +501,11 @@
     background-position: bottom right;
     background-repeat: no-repeat;
 
+    @media (max-width: 1300px) {
+        padding-top: 100px;
+        padding-bottom: 160px;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -523,6 +528,10 @@
     text-align: center;
 
     color: $black-blue;
+
+     @media (max-width: 1300px) {
+        margin-bottom: 30px;
+     }
 }
 
 .testimonials-item {
@@ -532,6 +541,16 @@
     background: $light-gray;
     border: 1px solid $orange;
     border-radius: 20px;
+
+    @media (max-width: 1300px) {
+        width: 293px;
+    }
+
+    &:nth-child(4) {
+        @media (max-width: 1300px) {
+            display: none;
+        }
+    }
 }
 
 .client-data {
