@@ -255,7 +255,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        //height: 1106px;
         padding: 0 140px 100px 140px;
 
         @media (max-width: 1300px) {
@@ -271,6 +270,10 @@
     @media (max-width: 1490px) {
         background-image: url('/src/assets/images/palm_small_desktop.png'), url('/src/assets/images/strelitzia_small_desktop.png');
     }
+
+    @media (max-width: 780px) {
+        background-image: url('/src/assets/images/palm_tablet.png'), url('/src/assets/images/strelitzia_tablet.png');
+    }
 }
 
 .slider {
@@ -280,6 +283,10 @@
     align-items: center;
     width: 100%;
     margin-bottom: 80px;
+
+    @media (max-width: 780px) {
+        margin-bottom: 60px;
+    }
 }
 
 .arrow {
@@ -292,6 +299,10 @@
         cursor: pointer;
         background: $green;
     }
+
+    @media (max-width: 780px) {
+        padding: 26px 22px;
+    }
 }
 
 .arrow-left {
@@ -300,6 +311,14 @@
         top: 42%;
         left: 34.5%;
     }
+
+    @media (max-width: 890px) {
+        top: 41%;
+    }
+
+    @media (max-width: 780px) {
+        top: 43.2%;
+    }
 }
 
 .arrow-right {
@@ -307,6 +326,14 @@
         position: absolute;
         top: 42%;
         left: 59%;
+    }
+
+    @media (max-width: 890px) {
+        top: 41%;
+    }
+
+    @media (max-width: 780px) {
+        top: 43.2%;
     }
 }
 
@@ -319,6 +346,11 @@
 
     @media (max-width: 1300px) {
         width: 100%;
+    }
+
+    @media (max-width: 780px) {
+        grid-template: 1fr 1fr / 1fr 1fr;
+        row-gap: 40px;
     }
 }
 
@@ -340,10 +372,26 @@
         height: 35vw;
     }
 
+    @media (max-width: 780px) {
+        height: 52vw;
+    }
+
     &:nth-child(-n+3) {
         @media (max-width: 1300px) {
             margin-bottom: 7.2vw;
            
+        }
+    }
+
+    &:nth-child(3) {
+        @media (max-width: 780px) {
+            display: none;
+        }
+    }
+
+    &:nth-child(6) {
+        @media (max-width: 780px) {
+            display: none;
         }
     }
 }
@@ -373,6 +421,10 @@
     line-height: 22px;
 
     text-transform: uppercase;
+
+    @media (max-width: 890px) {
+        font-size: 13px;
+    }
 }
 
 .pets-location {
@@ -382,6 +434,10 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
+
+    @media (max-width: 890px) {
+        font-size: 12px;
+    }
 }
 
 .pets-tooltip {
@@ -433,7 +489,6 @@
 // pick-n-feed
 
 .pick-n-feed {
-   // height: 1004px;
     padding: 70px 220px 100px 220px;
 
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
