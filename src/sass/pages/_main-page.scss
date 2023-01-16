@@ -498,6 +498,10 @@
         padding: 30px 30px 50px 30px;
     }
 
+    @media (max-width: 780px) {
+        padding: 20px 0;
+    }
+
     .container {
         padding: 40px 0 60px 100px;
 
@@ -512,6 +516,10 @@
 
         }
 
+        @media (max-width: 780px) {
+            padding: 10px 0 60px 20px;
+        }
+   
         .circle-button {
            margin-left: 31.3%;
         }
@@ -533,13 +541,23 @@
     @media (max-width: 1000px) {
         margin-bottom: 20px;
     }
+
+    @media (max-width: 780px) {
+        font-size: 42px;
+    }
 }
 
 .pick-text-big {
+    margin: 0;
+
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
+
+    @media (max-width: 780px) {
+        font-size: 22px;
+    }
 }
 
 .pick-text-bold {
@@ -567,6 +585,10 @@
         margin-bottom: 40px; 
     }
 
+    @media (max-width: 780px) {
+        margin-bottom: 30px;
+    }
+
     span {
         border-bottom: 1px solid $orange;
         cursor: pointer;
@@ -586,6 +608,10 @@
     font-size: 36px;
     line-height: 47px;
     text-align: center;
+
+    @media (max-width: 780px) {
+        margin-bottom: 20px;
+    }
 }
 
 .feed-container {
@@ -593,14 +619,38 @@
     justify-content: space-between;
     width: 72%;
     margin: 0 auto 60px 9.3%;
+
+    @media (max-width: 780px) {
+        position: relative;
+        width: 95%;
+        margin: 0 3.3% 40px 0;
+    }
 }
 
 .feed-item {
     width: 22%;
+
+    @media (max-width: 780px) {
+        width: 28.5%;
+    }
 }
 
 .pick-arrow {
     padding-bottom: 80px;
+
+    @media (max-width: 780px) {
+        display: none;
+    }
+}
+
+.pick-arrow-tablet {
+    display: none;
+    @media (max-width: 780px) {
+        display: inline;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 
 .feed-img {    
@@ -621,6 +671,11 @@
 
 .monkey {
     padding: 28.6% 12.6% 28.9% 13.2%;
+
+    @media (max-width: 780px) {
+        //width: 160.4px;
+        padding: 29% 12.6% 29% 13.1%;
+    }
 }
 
 // testimonials
