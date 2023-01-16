@@ -2,6 +2,12 @@
     padding: 40px 0 50px 0;
     background: #111115;
 
+    overflow: hidden;
+
+    @media (max-width: 871px) {
+        padding: 13px 0;
+    }
+
     .container {
         display: flex;
         .footer-left {
@@ -43,6 +49,9 @@
     row-gap: 16px;
     padding: 0;
     
+    @media (max-width: 871px) {
+        width: 30px;
+    }
 }
 
 .social-media-item {
@@ -59,6 +68,12 @@
     z-index: 2;
 
     padding-right: 5px;
+}
+
+.s-m-text {
+    @media (max-width: 871px) {
+        display: none;
+    }
 }
 
 .fb-img {
@@ -137,6 +152,10 @@
     line-height: 29px;
     
     color: #FFFFFF;
+
+    @media (max-width: 871px) {
+        display: none;
+    }
 }
 
 .input-email {
@@ -152,6 +171,10 @@
 
     background-color: transparent;
     border: 1px solid $orange;
+
+    @media (max-width: 871px) {
+        display: none;
+    }
 }
 
 .subscribe-button {
@@ -176,6 +199,10 @@
         border-color: $green;
         transition: .3s;
     }
+
+    @media (max-width: 871px) {
+        display: none;
+    }
 }
 
 .designer-information {
@@ -196,6 +223,11 @@
     @media (max-width: 950px) {
         left: 100px;
     }
+
+    @media (max-width: 871px) {
+        top: 310px;
+        left: 25%;
+    }
 }
 
 .footer-designer {
@@ -204,4 +236,8 @@
 
 .rss-info {
     margin: 10px 0 0 0;
+}
+
+.current-link {
+    color: $orange;
 }
