@@ -19,4 +19,8 @@ body {
     @media (max-width: 785px) {
         @include tablet-container;        
     }
+
+    @media (max-width: 400px) {
+        @include mobile-container;
+    }
 }

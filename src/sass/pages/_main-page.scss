@@ -197,6 +197,11 @@
         background-image: url(/src/assets/images/backstage-flower_tablet.png);
     }
 
+    @media (max-width: 500px) {
+        background-image: url(/src/assets/images/backstage-flower_mobile.png);
+        background-position: right 15%;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -224,7 +229,9 @@
 
         @media (max-width: 435px) {
             flex-direction: column;
+            height: auto;
             padding-top: 20px;
+            padding-bottom: 40px;
         }
 
         .circle-button {
@@ -281,6 +288,10 @@
     @media (max-width: 800px) {
         width: 82.6%;
     }
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 }
 
 .backstage-title {
@@ -288,6 +299,20 @@
     font-weight: 400;
     font-size: 48px;
     line-height: 58px;
+
+    @media (max-width: 589px) {
+        font-size: 38px;
+    }
+
+    @media (max-width: 414px) {
+        margin: 30px 0 10px 0;
+    }
+
+    @media (max-width: 410px) {
+        width: 300px;
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 
 .backstage-text1 {
@@ -304,6 +329,10 @@
         width: 92%;
         margin-bottom: 30px;
     }
+
+    @media (max-width: 414px) {
+        margin-bottom: 20px;
+    }
 }
 
 .backstage-subtitle {
@@ -314,6 +343,10 @@
     
     @media (max-width: 1207px) {
         margin-bottom: 30px;
+    }
+
+    @media (max-width: 414px) {
+        margin-bottom: 10px;
     }
 }
 
