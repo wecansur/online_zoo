@@ -28,6 +28,15 @@
             height: 339px;
             background-image: url("/src/assets/images/giant-panda_tablet.png");
         }
+
+        @media (max-width: 531px) {
+            height: 250px;
+        }
+
+        @media (max-width: 320px) {
+            height: 187px;
+            background-image: url("/src/assets/images/giant-panda_mobile.png");
+        }
     }
     .circle-button {
         position: absolute;
@@ -36,6 +45,14 @@
 
         @media (max-width: 975px) {
             left: 3%;
+        }
+
+        @media (max-width: 531px) {
+            top: 75%;
+        }
+
+        @media (max-width: 435px) {
+            display: none;
         }
     }
 }
@@ -66,6 +83,25 @@
         width: 238px;
         height: 238px;
         left: 53%;
+    }
+
+    @media (max-width: 564px) {
+        left: 50%;
+    }
+
+    @media (max-width: 531px) {
+        top: 25%;
+        left: 67%;
+        width: 130px;
+        height: 130px;
+    }
+
+    @media (max-width: 458px) {
+        left: 60%;
+    }
+
+    @media (max-width: 400px) {
+        left: 55%;
     }
 
 }
@@ -115,6 +151,31 @@
         font-size: 54px;
     }
 
+    @media (max-width: 617px) {
+        left: 53%;
+    }
+
+    @media (max-width: 564px) {
+        left: 50%;
+    }
+
+    @media (max-width: 531px) {
+        left: 70%;
+        top: 30%;
+        width: 128px;
+
+        font-size: 28px;
+        line-height: 22px;
+    }
+
+    @media (max-width: 458px) {
+        left: 65%;
+    }
+
+    @media (max-width: 400px) {
+        left: 55%;
+    }
+
     span {
         color: $yellow;
     }
@@ -159,6 +220,21 @@
             height: 510px;
             padding-top: 60px;
             padding-bottom: 80px;
+        }
+
+        @media (max-width: 435px) {
+            flex-direction: column;
+            padding-top: 20px;
+        }
+
+        .circle-button {
+            display: none;
+            @media (max-width: 435px) {
+                display: inline;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                margin: 0 auto 0 auto;
+            }
         }
     }
 }
