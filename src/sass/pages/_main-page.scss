@@ -684,6 +684,10 @@
         padding: 20px 0;
     }
 
+    @media (max-width: 450px) {
+        padding: 20px 10px;
+    }
+
     .container {
         padding: 40px 0 60px 100px;
 
@@ -708,6 +712,10 @@
 
         @media (max-width: 780px) {
             padding: 10px 20px 60px 20px;
+        }
+
+        @media (max-width: 450px) {
+            padding: 20px 0 40px 0;
         }
    
         .circle-button {
@@ -742,6 +750,11 @@
     @media (max-width: 780px) {
         font-size: 42px;
     }
+
+    @media (max-width: 450px) {
+        font-size: 24px;
+        margin: 0 0 10px 0;
+    }
 }
 
 .pick-text-big {
@@ -760,6 +773,13 @@
     @media (max-width: 780px) {
         font-size: 22px;
     }
+
+    @media (max-width: 450px) {
+        margin-bottom: 20px;
+
+        font-size: 18px;
+        text-align: center;
+    }
 }
 
 .pick-text-bold {
@@ -770,6 +790,10 @@
 
     @media (max-width: 1000px) {
         width: 97%;        
+    }
+
+    @media (max-width: 450px) {
+        display: none;
     }
 }
 
@@ -789,6 +813,10 @@
 
     @media (max-width: 780px) {
         margin-bottom: 30px;
+    }
+
+    @media (max-width: 450px) {
+        display: none;
     }
 
     span {
@@ -819,6 +847,10 @@
     @media (max-width: 780px) {
         margin-bottom: 20px;
     }
+
+    @media (max-width: 450px) {
+        font-size: 24px;
+    }
 }
 
 .feed-container {
@@ -835,7 +867,12 @@
     @media (max-width: 780px) {
         position: relative;
         width: 95%;
-        margin: 0 3.3% 40px 0;
+        margin: 0 0 10px 0;
+    }
+
+    @media (max-width: 450px) {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -844,6 +881,10 @@
 
     @media (max-width: 780px) {
         width: 28.5%;
+    }
+
+    @media (max-width: 450px) {
+        width: 59%;
     }
 }
 
@@ -860,6 +901,10 @@
     @media (max-width: 780px) {
         display: inline;
     }
+
+    @media (max-width: 450px) {
+        transform: rotate(90deg);
+    }
 }
 
 .arrow-1 {
@@ -867,6 +912,15 @@
         position: absolute;
         top: -6.5%;
         left: 24%;
+    }
+
+    @media (max-width: 450px) {
+        top: 28%;
+        left: 73%;
+    }
+
+    @media (max-width: 360px) {
+        left: 70%;
     }
 }
 
@@ -876,6 +930,15 @@
         top: -6.5%;
         left: 60%;
     }
+
+    @media (max-width: 450px) {
+        top: 60%;
+        left: 73%;
+    }
+
+    @media (max-width: 360px) {
+        left: 70%;
+    }
 }
 
 .feed-img {    
@@ -884,6 +947,13 @@
     background-color: #FFFFFF;
     border: 1px solid $orange;
     border-radius: 5px;
+}
+
+.feed-text {
+    @media (max-width: 450px) {
+        margin-top: 10px;
+        margin-bottom: 29px;
+    }
 }
 
 .pay {
