@@ -698,12 +698,25 @@
 
         }
 
+        @media (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+
         @media (max-width: 780px) {
-            padding: 10px 0 60px 20px;
+            padding: 10px 20px 60px 20px;
         }
    
         .circle-button {
            margin-left: 31.3%;
+
+           @media (max-width: 1000px) {
+            margin-left: auto;
+            margin-right: auto;
+           }
         }
     }
 }
@@ -722,6 +735,8 @@
     
     @media (max-width: 1000px) {
         margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media (max-width: 780px) {
@@ -736,6 +751,11 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
+
+    @media (max-width: 1000px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @media (max-width: 780px) {
         font-size: 22px;
@@ -791,6 +811,11 @@
     line-height: 47px;
     text-align: center;
 
+    @media (max-width: 1000px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     @media (max-width: 780px) {
         margin-bottom: 20px;
     }
@@ -801,6 +826,11 @@
     justify-content: space-between;
     width: 72%;
     margin: 0 auto 60px 9.3%;
+
+    @media (max-width: 1000px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @media (max-width: 780px) {
         position: relative;
