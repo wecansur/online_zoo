@@ -370,6 +370,15 @@
             padding-left: 30px;
             padding-right: 30px;
         }
+
+        @media (max-width: 453px) {
+            padding-left: 17px;
+            padding-right: 17px;
+        }
+
+        @media (max-width: 453px) {
+            padding-bottom: 60px;
+        }
     }
 
     background-image: url('/src/assets/images/palm.png'), url('/src/assets/images/strelitzia.png');
@@ -383,6 +392,10 @@
     @media (max-width: 780px) {
         background-image: url('/src/assets/images/palm_tablet.png'), url('/src/assets/images/strelitzia_tablet.png');
     }
+
+    @media (max-width: 495px) {
+        background-image: url('/src/assets/images/palm_mobile.png'), url('/src/assets/images/strelitzia_mobile.png');
+    }
 }
 
 .slider {
@@ -395,6 +408,10 @@
 
     @media (max-width: 780px) {
         margin-bottom: 60px;
+    }
+
+    @media (max-width: 453px) {
+        margin-bottom: 20px;
     }
 }
 
@@ -412,6 +429,14 @@
     @media (max-width: 780px) {
         padding: 26px 22px;
     }
+
+    @media (max-width: 570px) {
+        padding: 24px 20px;
+    }
+
+    @media (max-width: 453px) {
+        display: none;
+    }
 }
 
 .arrow-left {
@@ -427,6 +452,10 @@
 
     @media (max-width: 780px) {
         top: 43.2%;
+    }
+
+    @media (max-width: 480px) {
+        left: 32.8%;
     }
 }
 
@@ -449,6 +478,14 @@
     @media (max-width: 745px) {
         left: 56%;
     }
+
+    @media (max-width: 640px) {
+        left: 55%;
+    }
+
+    @media (max-width: 532px) {
+        left: 53%;
+    }
 }
 
 .pets-container {
@@ -465,6 +502,10 @@
     @media (max-width: 780px) {
         grid-template: 1fr 1fr / 1fr 1fr;
         row-gap: 40px;
+    }
+
+    @media (max-width: 453px) {
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
     }
 }
 
@@ -490,10 +531,21 @@
         height: 52vw;
     }
 
+    @media (max-width: 530px) {
+        height: 53vw;
+    }
+
+    @media (max-width: 453px) {
+        height: 104vw;
+    }
+
     &:nth-child(-n+3) {
         @media (max-width: 1300px) {
             margin-bottom: 7.2vw;
-           
+        }
+
+        @media (max-width: 453px) {
+            margin-bottom: 0;
         }
     }
 
@@ -519,6 +571,14 @@
     }
 }
 
+.veg-img {
+    height: 40px;
+}
+
+.pred-img {
+    height: 40px;
+}
+
 .pets-content {
     display: flex;
     justify-content: space-between;
@@ -539,6 +599,10 @@
     @media (max-width: 890px) {
         font-size: 13px;
     }
+
+    @media (max-width: 453px) {
+        font-size: 16px;
+    }
 }
 
 .pets-location {
@@ -551,6 +615,10 @@
 
     @media (max-width: 890px) {
         font-size: 12px;
+    }
+
+    @media (max-width: 453px) {
+        font-size: 15px;
     }
 }
 
