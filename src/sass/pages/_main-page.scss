@@ -434,15 +434,20 @@
     @media (max-width: 1300px) {
         position: absolute;
         top: 42%;
-        left: 59%;
+        left: 60.3%;
     }
 
     @media (max-width: 890px) {
         top: 41%;
+        left: 58%;
     }
 
     @media (max-width: 780px) {
         top: 43.2%;
+    }
+
+    @media (max-width: 745px) {
+        left: 56%;
     }
 }
 
