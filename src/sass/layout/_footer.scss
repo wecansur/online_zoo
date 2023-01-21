@@ -8,14 +8,28 @@
         padding: 13px 0;
     }
 
+    @media (max-width: 510px) {
+        padding: 20px 0;
+    }
+
     .container {
         display: flex;
+
+        @media (max-width: 510px) {
+            flex-direction: column;
+            align-items: center;
+        }
         .footer-left {
             display: flex;
             flex-direction: column;
 
             @media (max-width: 871px) {
                 position: relative;
+            }
+
+            @media (max-width: 510px) {
+                align-items: center;
+                order: 1;
             }
         }
 
@@ -35,6 +49,43 @@
                 position: relative;
                 width: 0;
             }
+
+            @media (max-width: 510px) {
+                order: 3;
+                width: 100%;
+            }
+
+            .nav-list {
+                display: flex;
+                justify-content: space-between;
+            
+                width: 100%;
+                list-style: none;
+            
+                color: #FFFFFF;
+            
+                @media (max-width: 1300px) {
+                    padding: 0;
+                }
+            
+                @media (max-width: 871px) {
+                    position: absolute;
+                    right: 50%;
+                    top: 230px;
+            
+                    width: 298px;
+                }
+            
+                @media (max-width: 615px) {
+                    width: 278px;
+                }
+            
+                @media (max-width: 510px) {
+                    position: static;
+                    width: 100%;
+                    margin: 0;
+                }
+            }
         }
 
         .footer-right {
@@ -43,9 +94,44 @@
             @media (max-width: 1300px) {
                 width: 49%;
             }
+
+            @media (max-width: 510px) {
+                display: flex;
+                justify-content: flex-end;
+                order: 2;
+                width: 100%;
+                margin: 30px 0;
+            }
         }
     }
 
+}
+
+.about-link {
+    @media (max-width: 510px) {
+        order: 1;   
+    }
+}
+
+.footer-logo {
+    @media (max-width: 510px) {
+        display: none;
+    }
+}
+
+.logo-container {
+    position: relative;
+    display: none;
+    font-size: 19px;
+    @media (max-width: 510px) {
+        display: block;
+    }
+
+    .bamboo {
+        position: absolute;
+        top: -3px;
+        left: 58%;
+    }
 }
 
 .donate-button {
@@ -54,6 +140,16 @@
     @media (max-width: 871px) {
         margin-top: 32px;
         margin-bottom: 131px;
+    }
+
+    @media (max-width: 510px) {
+        order: 3;
+        margin: 0;
+    }
+
+    .don-link {
+        text-decoration: none;
+        color: #FFFFFF;
     }
 }
 
@@ -93,6 +189,28 @@
 
     @media (max-width: 655px) {
         left: 190%;
+    }
+
+    @media (max-width: 615px) {
+        left: 180%;
+    }
+
+    @media (max-width: 585px) {
+        left: 170%;
+    }
+
+    @media (max-width: 555px) {
+        left: 155%;
+    }
+
+    @media (max-width: 510px) {
+        position: static;
+        flex-direction: row;
+        order: 2;
+        width: 194px;
+        height: auto;
+
+        margin: 30px 0;
     }
 }
 
@@ -161,28 +279,6 @@
 .s-m-ellipse-hover {
     background-color: $green;
     transition: .3s;
-}
-
-.nav-list {
-    display: flex;
-    justify-content: space-between;
-
-    width: 100%;
-    list-style: none;
-
-    color: #FFFFFF;
-
-    @media (max-width: 1300px) {
-        padding: 0;
-    }
-
-    @media (max-width: 871px) {
-        position: absolute;
-        right: 50%;
-        top: 230px;
-
-        width: 298px;
-    }
 }
 
 .nav-item {
@@ -297,6 +393,24 @@
 
     @media (max-width: 655px) {
         left: 20%;
+    }
+
+    @media (max-width: 615px) {
+        left: 10%;
+    }
+
+    @media (max-width: 585px) {
+        top: 190px;
+        left: 0;
+    }
+
+    @media (max-width: 555px) {
+        top: 180px;
+        left: -20%;
+    }
+
+    @media (max-width: 510px) {
+        position: static;
     }
 }
 
