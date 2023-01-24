@@ -4,7 +4,14 @@
     .container {
         padding-top: 40px;
         padding-bottom: 180px;
+
+        @media (max-width: 735px) {
+            padding: 30px 20px 46px 20px;
+        }
         
+        @media (max-width: 585px) {
+            padding: 30px 10px 20px 10px;
+        }
     }
 }
 
@@ -26,6 +33,15 @@
     line-height: 47px;
     
     color: #FFFFFF;
+
+    @media (max-width: 735px) {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    @media (max-width: 585px) {
+        font-size: 22px;
+    }
 }
 
 .pick-n-feed-don-p {
@@ -37,6 +53,11 @@
     line-height: 22px;
 
     color: #FFFFFF;
+
+    @media (max-width: 735px) {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
 }
 
 .donation-title {
@@ -47,6 +68,14 @@
     line-height: 47px;
     
     color: #FE9013;
+
+    @media (max-width: 735px) {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 585px) {
+        font-size: 24px;
+    }
 }
 
 .pick-n-feed-div-don {
@@ -56,6 +85,14 @@
     backdrop-filter: blur(2px);
 
     border-radius: 20px;
+
+    @media (max-width: 735px) {
+        padding: 30px 0 31px 0;
+    }
+
+    @media (max-width: 585px) {
+        padding: 20px 0;
+    }
 }
 
 .pick-and-feed-don-title {
@@ -69,6 +106,10 @@
     text-align: center;
 
     color: #FE9013;
+
+    @media (max-width: 585px) {
+        font-size: 24px;
+    }
 }
 
 .pick-and-feed-don-small-p {
@@ -80,6 +121,18 @@
     line-height: 29px;
 
     color: $black-blue;
+
+    @media (max-width: 735px) {
+        text-align: center;
+    }
+
+    @media (max-width: 585px) {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
 }
 
 .dying-panda-section {
@@ -87,8 +140,12 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 54.7%;
+    width: 517px;
     margin: 0 auto 0 auto;
+
+    @media (max-width: 585px) {
+        width: 100%;
+    }
 }
 
 .four {
@@ -102,6 +159,11 @@
     text-transform: uppercase;
 
     color: #000000;
+
+    @media (max-width: 585px) {
+        font-size: 40px;
+        margin-bottom: 4px;
+    }
 }
 
 .panda-info {
@@ -115,6 +177,23 @@
     text-align: center;
 
     color: $black-blue;
+
+    @media (max-width: 585px) {
+        font-size: 10px;
+    }
+}
+
+.dying-panda {
+    @media (max-width: 585px) {
+        display: none;
+    }
+}
+
+.dying-panda-mob {
+    display: none;
+    @media (max-width: 585px) {
+        display: inline;
+    }
 }
 
 .p-n-f-form {
@@ -127,6 +206,48 @@
     }
 }
 
+.amount-scroller-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.amount-scroller {
+    width: 100%;
+    height: 27px;
+    background-color: #404950;
+    border-radius: 2px;
+}
+
+.scroller-line {
+    position: absolute;
+    left: 3%;
+    top: 43%;
+    height: 2px;
+    width: 93.75%;
+    background-color: #72828E;
+}
+
+.ellipse-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 93.75%;
+    height: 27px;
+    margin-left: 2.9%;
+}
+
+.ellipse {
+    width: 10px;
+    height: 10px;
+    background-color: #FFEE2E;
+    border-radius: 50%;
+}
+
 .amount-p {
     font-style: normal;
     font-weight: 400;
@@ -134,6 +255,10 @@
     line-height: 22px;
 
     color: #000000;
+
+    @media (max-width: 735px) {
+        margin-left: 10px;
+    }
 }
 
 .amount-input {
@@ -163,4 +288,8 @@
     line-height: 22px;
 
     color: $black-blue;
+
+    @media (max-width: 735px) {
+        width: 300px;
+    }
 }

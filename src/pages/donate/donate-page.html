@@ -57,13 +57,27 @@
                             <p class="panda-info">Panda diet for the day.</p>
                         </div>
                         <span>&#10006;</span>
-                        <img src="/src/assets/images/donate_panda.png">
+                        <img src="/src/assets/images/donate_panda.png" class="dying-panda">
+                        <img src="/src/assets/images/donate_panda_mobile.png" class="dying-panda-mob">
                     </div>
 
                     <p class="amount-p">Amount</p>
 
                     <form class="p-n-f-form">
-                        <input type="range" min="0" max="8" step="1" value="0" class="amount-scroller">
+                        <div class="amount-scroller-container">
+                            <div class="amount-scroller"></div>
+                            <div class="scroller-line"></div>
+                            <div class="ellipse-container">
+                                <div class="ellipse"></div>
+                                <div class="ellipse"></div>
+                                <div class="ellipse"></div>
+                                <div class="ellipse"></div>
+                                <div class="ellipse"></div>
+                                <div class="ellipse"></div>
+                                <div class="ellipse"></div>
+                                <div class="ellipse"></div>
+                            </div>
+                        </div>
                         <input type="number" placeholder="Another amount" maxlength="4" class="amount-input">
 
                         <label>Monthly
