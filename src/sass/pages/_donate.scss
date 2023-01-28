@@ -320,7 +320,22 @@
     }
 }
 
+.amount-input-container {
+    position: relative;
+
+    &::after {
+        content: '$';
+        position: absolute;
+        left: 190px;
+        top: 66px;
+        width: 10px;
+        height: 20px;
+        color: #929699;
+    }
+}
+
 .amount-input {
+    position: relative;
     max-width: 268px;
     height: 54px;
     padding-left: 9px;
@@ -335,6 +350,12 @@
     background-color: transparent;
     border: 1px solid #929699;
     border-radius: 2px;
+
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
 }
 
 .share-p {

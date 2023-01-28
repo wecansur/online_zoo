@@ -43,5 +43,3 @@ const email = document.querySelector('.input-email');
 email.addEventListener('input', () => {
     email.value = window.outerWidth;
 })
-
-//1425
