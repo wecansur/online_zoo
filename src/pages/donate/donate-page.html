@@ -81,15 +81,17 @@
                         <div class="amount-input-container">
                             <input type="number" placeholder="Another amount" maxlength="4" class="amount-input">
                         </div>
-
-                        <label>Monthly
-                            <input type="radio" name="donation-type" value="monthly">
-                        </label>
-
-                        <label>Once
-                            <input type="radio" name="donation-type" value="once" checked="yes">
-                        </label>
-
+                        <div class="radio-container">
+                            <label class="radio-label">
+                                <input type="radio" name="donation-type" value="monthly" class="radio monthly">
+                                <span>Monthly</span>
+                            </label>
+    
+                            <label class="radio-label">
+                                <input type="radio" name="donation-type" value="once" checked="yes" class="radio once">
+                                <span>Once</span>
+                            </label>
+                        </div>
                         <button class="circle-button">feed a friend now</button>
                     </form>
 
