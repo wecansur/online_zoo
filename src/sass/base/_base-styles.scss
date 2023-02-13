@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    @include desktop-container;
+    @media (max-width: 1530px) {
+        padding: 0 100px;
+    }
+
+    @media (max-width: 1207px) {
+        @include small-desktop-container;        
+    }
+
+    @media (max-width: 785px) {
+        @include tablet-container;        
+    }
+
+    @media (max-width: 400px) {
+        @include mobile-container;
+    }
+}

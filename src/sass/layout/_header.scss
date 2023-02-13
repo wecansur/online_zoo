@@ -1,0 +1,100 @@
+.header {
+    background-color: #000000;
+    backdrop-filter: blur(2px);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+
+        .designed-link {
+            width: 106px;
+
+            @media (max-width: 640px) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 785px) {
+            height: 60px;
+        }
+
+        @media (max-width: 640px) {
+            height: 34px;
+        }
+    }
+    .logo-n-nav {
+        display: flex;
+        align-items: center;
+        width: 620px;
+        height: 100%;
+
+        .nav {
+            width: 475px;
+
+            @media (max-width: 640px) {
+                display: none;
+            }
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 60px;
+    
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+    
+            list-style: none;
+
+            @media (max-width: 785px) {
+                padding-left: 40px;
+            }
+        }
+    
+        .nav-item {
+            &:hover {
+                color: $orange;
+                cursor: pointer;
+                transition: .3s;
+            }
+        } 
+
+        @media (max-width: 785px) {
+            width: 450px;
+        }
+        
+    }
+
+    
+}
+
+.logo {
+    @media (max-width: 640px) {
+        display: none;
+    } 
+}
+
+.logo-tablet {
+    display: none;
+
+    @media (max-width: 640px) {
+        display: inline;
+    } 
+}
+
+.burger-button {
+    display: none;
+
+    @media (max-width: 640px) {
+        display: inline;
+    } 
+}
+
+.current-link {
+    color: $orange;
+}
